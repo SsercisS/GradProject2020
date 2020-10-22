@@ -17,24 +17,24 @@ namespace RBS_Reports
         {
             InitializeComponent();
             TopMost = true;
-            if (firstOp)
-            {
-                Thread t = new Thread(new ThreadStart(Splash));
-                t.Start();
+            //if (firstOp)
+            //{
+            //    Thread t = new Thread(new ThreadStart(Splash));
+            //    t.Start();
 
-                Thread.Sleep(2000);
-                t.Abort();
-            }
+            //    Thread.Sleep(2000);
+            //    t.Abort();
+            //}
             
             
         }
 
-        void Splash()
-        {
-            SplashScreen.SplashForm splash = new SplashScreen.SplashForm();
-            splash.AppName = "RPS Reports v 1.4.2";
-            Application.Run(splash);
-        }
+        //void Splash()  Загрузочный экран, с ним иногда дропает код
+        //{
+        //    SplashScreen.SplashForm splash = new SplashScreen.SplashForm();
+        //    splash.AppName = "RPS Reports v 1.4.2";
+        //    Application.Run(splash);
+        //}
 
         private void SettingBD_Load(object sender, EventArgs e)
         {
